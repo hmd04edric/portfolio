@@ -6,18 +6,23 @@ body {
 }
 h3,
 p,
-h6,h2 ,button{
+h6,
+h2,
+button {
   margin: 0;
 }
-h2{
+h2 {
   font-size: 58px;
 }
 .container {
   max-width: 1140px;
   margin: 0 auto;
-  padding-bottom:20px ;
+  padding-bottom: 20px;
 }
-.projects,.clients,.faq,.collaborate-section{
+.projects,
+.clients,
+.faq,
+.collaborate-section {
   padding-top: 100px;
 }
 .projects h2,
@@ -67,6 +72,7 @@ h2{
   font-size: 18px;
 }
 .socials {
+  margin-top: 16px;
   display: flex;
   justify-content: center;
   gap: 16px;
@@ -81,14 +87,14 @@ h2{
   max-width: 20px;
 }
 
-.socials .btn {
-  margin-top: 15px;
-  padding: 10px 20px;
-  background: #a44cff;
+.avatar-info .btn {
+  background: rgb(145, 75, 241);
+  color: #fff;
+  border-radius: 12px;
+  /* padding: 12px 20px; */
+  width: 180px;
+  height: 44px;
   border: none;
-  border-radius: 8px;
-  color: white;
-  cursor: pointer;
 }
 
 .main-content {
@@ -157,10 +163,9 @@ h2{
   font-size: 16px;
 }
 
-/* .clients {
-  margin-top: 50px;
-
-} */
+.clients {
+  position: relative;
+}
 
 .client-info {
   display: flex;
@@ -173,8 +178,7 @@ h2{
   object-fit: cover;
   border-radius: 50%;
 }
-.clients h2{
- 
+.clients h2 {
   margin-bottom: 80px;
 }
 .testimonial {
@@ -193,37 +197,40 @@ h2{
 .testimonial-text {
   font-size: 18px;
 }
-
-.button-arrow-left{
-  position: absolute;
-  top: -60px;
-  right: 50px;
-  justify-content: center;
-  z-index: 2 !important;
-  align-items: center;
-
-  
+.swiper {
+  position: unset !important;
 }
-.button-arrow-right{
-  position: absolute;
-  top: -60px;
+.swiper-wrapper {
+  position: unset !important;
+}
+.swiper-slide {
+  position: unset !important;
+}
+.button-arrow-left {
+  right: 50px;
+}
+.button-arrow-right {
   right: 0px;
-  justify-content: center;
-  z-index: 2 !important;
-  align-items: center;
 }
 .button-arrow-left,
 .button-arrow-right {
-  border-radius: 50%;
-  background: #a44cff;
+  position: absolute;
+  top: 55%;
+  justify-content: center;
+  z-index: 2 !important;
+  align-items: center;
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
 }
-  
-.button-arrow-left img, .button-arrow-right img {
+
+/* .button-arrow-left img, .button-arrow-right img {
   width: 40px;
   height: 40px;
   object-fit: cover;
 }
-  
+   */
 
 /* .swiper-button {
   position: absolute;
@@ -241,155 +248,147 @@ h2{
     max-width: 700px;
 } */
 
-
 .faq h2 span {
-    color: #a44cff;
+  color: #a44cff;
 }
 
 .faq-item {
-    background: #222;
-    border-radius: 8px;
-    margin-bottom: 10px;
-    overflow: hidden;
+  background: #222;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  overflow: hidden;
 }
 
 .faq-question {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  cursor: pointer;
 }
 
 .faq-text {
-    color: white;
-    font-size: 1rem;
+  color: white;
+  font-size: 1rem;
 }
 
 /* Icon container */
 .faq-icon {
-    width: 20px;
-    height: 20px;
+  width: 20px;
+  height: 20px;
 }
 
 /* Xoay ảnh icon */
 .faq-icon img {
-    width: 100%;
-    height: 100%;
-    transition: transform 0.3s ease;
-    transform-origin: center;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.3s ease;
+  transform-origin: center;
 }
 
 .faq-answer {
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.3s ease;
-    padding: 0 20px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+  padding: 0 20px;
 }
 
 .faq-answer p {
-    margin: 15px 0;
-    color: #bbb;
-    font-size: 0.95rem;
+  margin: 15px 0;
+  color: #bbb;
+  font-size: 0.95rem;
 }
 
 .faq-item.active .faq-answer {
-    max-height: 500px;
+  max-height: 500px;
 }
-
 
 .faq-item.active .faq-icon img {
-    transform: rotate(180deg);
+  transform: rotate(180deg);
 }
-
 
 .collaborate-card {
-    background: #1e1e1e;
-    border-radius: 20px;
-    padding: 20px;
-    position: relative;
-    justify-content: center;
-    display: flex;
-    align-items: flex-start;
+  background: #1e1e1e;
+  border-radius: 20px;
+  padding: 20px;
+  position: relative;
+  justify-content: center;
+  display: flex;
+  align-items: flex-start;
 }
 .collaborate-text {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
-
 .collaborate-text h2 span {
-   color:  rgb(145, 75, 241);
+  color: rgb(145, 75, 241);
 }
 
 .collaborate-text p {
-   font-size: 18px;
-   color: rgb(217, 217, 217);
+  font-size: 18px;
+  color: rgb(217, 217, 217);
 }
 
 .collaborate-icon {
-    background: #b057ff;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    cursor: pointer;
-    
+  background: #b057ff;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
 }
 .collaborate-icon img {
-    max-width: 34px;
-    object-fit: cover;
-  
+  max-width: 34px;
+  object-fit: cover;
 }
 .collaborate-footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 15px;
-    flex-wrap: wrap;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 15px;
+  flex-wrap: wrap;
 }
 
 .collaborate-footer p {
-    color: #999;
-    font-size: 0.8rem;
+  color: #999;
+  font-size: 0.8rem;
 }
 
 .collaborate-footer a {
-    color: #b057ff;
-    text-decoration: none;
+  color: #b057ff;
+  text-decoration: none;
 }
 
 .footer-buttons {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    position: fixed;
-    right: 20px;
-    bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
 }
 
 .footer-buttons button {
-    background: #fff;
-    color:#111;
-    border: none;
-    padding: 8px 14px;
-    border-radius: 6px;
-    cursor: pointer;
-    font-size: 0.85rem;
+  background: #fff;
+  color: #111;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.85rem;
 }
 
 .btn.purple {
-    background: #b057ff;
+  background: #b057ff;
 }
 
 .btn.small {
-    font-size: 0.75rem;
+  font-size: 0.75rem;
 }
-

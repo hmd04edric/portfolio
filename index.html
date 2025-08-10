@@ -13,6 +13,7 @@
         <link
             href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap"
             rel="stylesheet">
+        <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
     </head>
     <body>
         <div class="container">
@@ -51,7 +52,7 @@
 
             <!-- Main Content -->
             <main class="main-content">
-                <section class="intro">
+                <section data-aos="flip-up" class="intro">
                     <h1>Transforming Your Ideas into <span>Reality</span></h1>
                     <p>Passionate about creating intuitive and engaging user
                         experiences. Specialize in transforming ideas into
@@ -74,7 +75,7 @@
                     </div>
                 </section>
 
-                <section class="projects">
+                <section data-aos="fade-up" class="projects">
                     <h2>Recent Projects <br> and <span>Achievements</span></h2>
                     <div class="grid">
                         <div class="project-card">
@@ -115,7 +116,7 @@
                     </div>
                 </section>
 
-                <section class="clients">
+                <section data-aos="fade-up" class="clients">
                     <h2>What Clients Say <br> About My <span>Work</span></h2>
                     <!-- Swiper -->
                     <div class="swiper mySwiper">
@@ -166,15 +167,19 @@
                         <!-- Add Arrows -->
 
                         <button class="button-arrow-left">
-                            <img src="/imgs/left-arrow-svgrepo-com.svg" alt>
+                            <img decoding="async" width="40" height="40"
+                                src="https://framerusercontent.com/images/iQT5rsUpXnYMZxoukFzZ0bQkQ.png"
+                                alt="Back Arrow">
                         </button>
                         <button class="button-arrow-right">
-                            <img src="/imgs/right-arrow-svgrepo-com.svg" alt>
+                            <img decoding="async" width="40" height="40"
+                                src="https://framerusercontent.com/images/n9Zv4xttuom2B73GdOeO1zfu8jw.png"
+                                alt="Next Arrow">
                         </button>
 
                     </div>
                 </section>
-                <section class="faq">
+                <section data-aos="flip-up" class="faq">
                     <h2>Frequently <br> Asked <span>Questions</span></h2>
 
                     <div class="faq-item">
@@ -260,7 +265,7 @@
                         </div>
                     </div>
                 </section>
-                <section class="collaborate-section">
+                <section data-aos="fade-up" class="collaborate-section">
                     <div class="collaborate-card">
                         <div class="collaborate-text">
                             <h2>Let’s <br><span>collaborate</span></h2>
@@ -273,32 +278,33 @@
                             </p>
                         </div>
                         <div class="collaborate-icon">
-                            <img src="/imgs/right-sm-svgrepo-com.svg" alt="">
+                            <img src="/imgs/right-sm-svgrepo-com.svg" alt>
                         </div>
                     </div>
 
                     <div class="collaborate-footer">
                         <p>Made by <a href="#">Templyo</a> | Powered by
                             Framer</p>
-                       
+
                     </div>
                 </section>
-                
 
             </main>
             <section>
-                 <div class="footer-buttons">
-                            <button class="btn purple">Use for Free</button>
-                            <button class="btn">More Templates</button>
-                            <button class="btn small">Made in Framer</button>
-                        </div>
+                <div class="footer-buttons">
+                    <button class="btn purple">Use for Free</button>
+                    <button class="btn">More Templates</button>
+                    <button class="btn small">Made in Framer</button>
+                </div>
             </section>
         </div>
 
-        <!-- Swiper JS -->
-        <script
-            src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-        <script>
+    </body>
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <!-- Swiper JS -->
+    <script
+        src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
     var swiper = new Swiper(".mySwiper", {
       navigation: {
         nextEl: ".button-arrow-right",
@@ -312,7 +318,13 @@
             q.parentElement.classList.toggle("active");
         });
     });
+    
 
   </script>
-    </body>
+    <script>
+  AOS.init({
+    duration: 1000, // thời gian animation
+    once: true    // chỉ chạy 1 lần khi cuộn đến
+  });
+</script>
 </html>
