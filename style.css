@@ -465,9 +465,13 @@ h2 {
     width: 100%;
     margin-bottom: 20px;
   }
+  .avatar-info{
+    gap: 20px;
+  }
 
   .main-content {
     margin: 0;
+    padding: 20px 0;
   }
   .intro h1 {
     font-size: 48px;
