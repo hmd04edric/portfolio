@@ -8,6 +8,7 @@ h3,
 p,
 h6,
 h2,
+h1,
 button {
   margin: 0;
 }
@@ -22,7 +23,8 @@ h2 {
 .projects,
 .clients,
 .faq,
-.collaborate-section {
+.collaborate-section,
+.contact-section {
   padding-top: 100px;
 }
 .projects h2,
@@ -391,4 +393,129 @@ h2 {
 
 .btn.small {
   font-size: 0.75rem;
+}
+
+.contact-section h2 span {
+  color: #a855f7; /* Tím */
+}
+
+.contact-form {
+  margin-top: 20px;
+  background-color: #1a1a1a;
+  padding: 20px;
+  border-radius: 10px;
+}
+.form-group{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.contact-form label {
+  font-size: 0.9rem;
+  margin-bottom: 5px;
+  display: block;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: -webkit-fill-available;
+  background-color: #2a2a2a;
+  border: none;
+  padding: 10px;
+  color: white;
+  font-size: 1rem;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  outline: none;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: #bbb;
+}
+
+.contact-form textarea {
+  min-height: 120px;
+  resize: none;
+}
+
+.contact-form button {
+  width: 100%;
+  padding: 12px;
+  background-color: #a855f7;
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background-color: #9333ea;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    padding: 0 20px;
+  }
+  .sidebar {
+    position: relative;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .main-content {
+    margin: 0;
+  }
+  .intro h1 {
+    font-size: 48px;
+    margin: 30px 0;
+  }
+  h2 {
+    font-size: 36px;
+  }
+  .intro,
+  .projects,
+  .clients,
+  .faq,
+  .collaborate-section
+   {
+    text-align: center;
+  }
+  .stats {
+    gap: 26px;
+    justify-content: center;
+  }
+  .stat-item {
+    align-items: center;
+    text-align: center;
+  }
+  .stat-item .number {
+    font-size: 50px;
+  }
+  .stat-item .text {
+    font-size: 14px;
+  }
+  .projects .grid {
+    grid-template-columns: repeat(1, minmax(50px, 1fr));
+  }
+  .button-arrow-left,
+  .button-arrow-right {
+    top: 42%;
+  }
+  .projects,
+  .clients,
+  .faq,
+  .collaborate-section,
+  .contact-section {
+    padding-top: 80px;
+  }
+  .contact-section h2{
+    text-align: center;
+    
+
+  }
+  
 }
