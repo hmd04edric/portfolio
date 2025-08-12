@@ -488,7 +488,7 @@ h2 {
    {
     text-align: center;
   }
-  .project-info{
+  .project-info, .testimonial-text{
     text-align: start;
   }
   .stats {
