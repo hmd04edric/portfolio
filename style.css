@@ -488,6 +488,9 @@ h2 {
    {
     text-align: center;
   }
+  .project-info{
+    text-align: start;
+  }
   .stats {
     gap: 26px;
     justify-content: center;
