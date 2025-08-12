@@ -39,14 +39,14 @@ h2 {
   /* left: 0; */
 
   background: rgb(39, 40, 41);
-  padding: 20px;
+  padding: 10px;
   box-sizing: border-box;
   border-radius: 16px;
 }
 
 .avatar-card {
   text-align: center;
-  padding: 30px 20px;
+  padding: 10px 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -57,7 +57,7 @@ h2 {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  gap: 80px;
+  gap: 30px;
 }
 
 .avatar-card .avatar-img {
@@ -464,6 +464,9 @@ h2 {
     position: relative;
     width: 100%;
     margin-bottom: 20px;
+  }
+  .avatar-card .avatar-img {
+    max-width: 100%;
   }
   .avatar-info{
     gap: 20px;
